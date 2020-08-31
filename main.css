@@ -1,0 +1,44 @@
+.background {
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    z-index: -100;
+}
+
+.content {
+    position: absolute;
+    z-index: 100;
+    width: 60%;
+    left: 20%;
+    top: 8%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+#list-inline-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#list-inline {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#list-inline li {
+    float: left;
+    list-style-type: none;
+}
+
+#list-inline a {
+    color: #3E3F3A
+}
