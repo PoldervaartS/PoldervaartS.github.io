@@ -27,6 +27,10 @@ body{
     width: 100%;
 }
 
+.push-right{
+    margin-left: 15%;
+}
+
 .ol{
     list-style-position: inside;
 }
