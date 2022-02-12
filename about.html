@@ -3,7 +3,7 @@
 
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/sandstone/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
+    integrity="sha384-G3Fme2BM4boCE9tHx9zHvcxaQoAkksPQa/8oyn1Dzqv7gdcXChereUsXGx6LtbqA" crossorigin="anonymous">
     <link href="main.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/504344420d.js"></script>
@@ -14,22 +14,93 @@
 <body>
     <div id="main-bar"></div>
     <script src="./javascript/navBar.js?id=about" id="nav-bar"></script>
-    <div class="background"></div>
-    <div class="content d-flex flex-column" style="height: 80%">
-        <div class="d-flex">
-            <img src="./images/Pic.jpg" width="300px" height="400px" alt="Picture of Myself">
+    <div class="content d-flex flex-column">
+        <div class="d-flex col">
+            <img class="picture" src="./images/Pic.jpg" width="300px" height="400px" alt="Picture of Myself">
             <div class="col">
-                <h1>Howdy</h1>
-                <p>&emsp;My name is Shane Poldervaart and I am a Junior Computer Science Student at Texas A&M
-                    University. During extended breaks I like to go scuba diving. It is truly a truly breathtaking sight
-                    to see a whole different world than the one we are used to.
+                <h1>About Me</h1>
+                <br><h2>Schooling</h2>
+                <p>&emsp;
+                    <em>Howdy!</em> 
+                    My name is Shane Poldervaart and I am a Masters Student at Texas A&M University. My area of focus is AI where 
+                    I participate in research for the General Motors Autodrive II Challenge. In it 16 universities compete in order to make a
+                    <strong>fully</strong> autonomous vehicle approaching multiple challenges such as perception, route planning, 
+                    and ethical issues surrounding it. I participate as part of the perception team who recognize traffic signs and signals along with
+                    visualizing the environment around the car.
+                    <a href="http://autodrive.tamu.edu/">Learn more at the A&M Autodrive website</a>.
                 </p>
-                <p>&emsp;While in school and one of the primary focuses of my life is my involvement in the Texas A&M
-                    Rocket League Community as president of the club and captain of the A team. As captain of the team I
-                    organize tryouts, practices, and manage the team. In addition to that, I organize community events
-                    such as profit shares and tournaments for A&M students.
-                </p>
-                <img src="./images/TAMURL.png" width="110px" height="105px" alt="Texas A&M Rocket League Logo">
+                <h3>Favourite Projects</h3>
+                <ol class="list-group">
+                    <li class="list-group-item numbered"><em>Autodrive: </em> Working on the Autodrive project has easily been my favourite project and I have
+                         multiple repositories involving various work done on it ranging from leveraging Deep Neural Networks to identify signs, 
+                         to state machines designed to handle traffic signals.  
+                    </li>
+                    <li class="list-group-item numbered"><em>CifarCNN: </em> Cifar10 is a publicly available dataset featuring 32x32 images of 10 different classes to identify. 
+                        In order to tackle this challenege I created a residual neural network in pytorch to train and correctly classify the images. 
+                    <a href="https://github.com/PoldervaartS/Cifar10cnn_pytorch">Resnet sourse code available on Github</a> </li>
+                    <li class="list-group-item numbered"><em>Endeavr: </em> Multidisciplinary Project through A&M's Endeavr program in which we worked to help plan Nolanville
+                        Texas to be a Smart City. Our computer science application was accomplished by training a deep neural network to
+                        identify and categorize pedestrians, cyclists, and motor vehicles in Nolanville streets to compile data analytics for
+                        other disciplines to use in their decision-making process such as optimal places to place bus stops, plan new sidewalks,
+                        and later evaluate the results of these proposals. <a href="https://github.com/PoldervaartS/Endeavr_Bravos">Endeavr source code available on Github</a>
+                    </li>
+                    <li class="list-group-item numbered"><em>Training Packs: </em> Discord Bot that provides Rocket League training packs with a wide range of search options and various other functions curated from
+                        Wayprotein's Training Pack list. <a href="https://github.com/BallChasingCoach/Bot">Training Pack Bot source code on Github</a>
+                    </li>
+                </ol>
+                <h2>Personal Life</h2>
+                <h3>Hobbies</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><em>Scuba Diving: </em> Scuba diving is a great passion of mine that I try to take trips of regularly. When you are underwater
+                        it is really a whole new world seeing all of the fish and marine life. 
+                    </li>
+                    <li class="list-group-item"><em>Reading: </em> I greatly enjoy reading as there is so much room for imagination. Some of my favourite books are Dune and Enders Game both of which
+                        lean heavily into science fiction and present the world in new ways.
+                    </li>
+                    <li class="list-group-item"><em>Disc Golf: </em> A recent hobby that I have picked up with coworkers has been disc golf! It's a ton of fun to go out and see the different courses
+                        and of course compete and hang out with each other seeing who can get the furthest drives. It functions a lot like regular golf in that there is a surprisingly large amount 
+                        of form that goes into it along with many types of discs that will all fly differently similar to choosing different clubs in regular golf. 
+                    </li>
+                    <li class="list-group-item"><em>Rocket League: </em> 
+                    such as profit shares and tournaments for A&M students.</li>
+                </ul>
+                <h3>Rocket League</h3>
+                <p>While in school and one of the primary focuses of my life is my involvement in the Texas A&M
+                Rocket League Community as former president of the club and captain of the A team. It has been an amazing journey seeing the
+                community grow over the years along with the development of the Esports scene in general. As captain of the team I
+                organize tryouts, practices, and manage the team. In addition to that, I organize community events with other administrators</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Year</th>
+                            <th scope="col">Number of Members</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2017</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>2018</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>375</td>
+                        </tr>
+                        <tr>
+                            <td>2020</td>
+                            <td>550</td>
+                        </tr>
+                        <tr>
+                            <td>2021</td>
+                            <td>700</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="https://discord.gg/Bp9Wz8f">Join the A&M RL Discord</a>
+                <img src="./images/TAMURL.png" width="110px" height="105px" alt="Decorative">
             </div>
 
         </div>
@@ -37,7 +108,7 @@
             <ul id="list-inline">
                 <!-- Mail -->
                 <li>
-                    <a href="mailto:shane.poldervaart@tamu.edu">
+                    <a href="mailto:shane.poldervaart@tamu.edu" aria-label="Email me">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-square fa-stack-2x" aria-hidden="true"></i>
                             <i class="fas fa-envelope fa-stack-1x fa-inverse" aria-hidden="true"></i>
@@ -46,7 +117,7 @@
                 </li>
                 <!-- LinkedIn -->
                 <li>
-                    <a href="https://www.linkedin.com/in/shane-poldervaart-36137a171/">
+                    <a href="https://www.linkedin.com/in/shane-poldervaart-36137a171/" aria-label="My Linkedin Profile">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-square fa-stack-2x" aria-hidden="true"></i>
                             <i class="fab fa-linkedin fa-stack-1x fa-inverse" aria-hidden="true"></i>
@@ -55,7 +126,7 @@
                 </li>
                 <!-- GitHub -->
                 <li>
-                    <a href="http://github.com/PoldervaartS/">
+                    <a href="http://github.com/PoldervaartS/" aria-label="My Github Profile">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-square fa-stack-2x" aria-hidden="true"></i>
                             <i class="fab fa-github fa-stack-1x fa-inverse" aria-hidden="true"></i>
@@ -64,7 +135,7 @@
                 </li>
                 <!-- Facebook -->
                 <li>
-                    <a href="https://www.facebook.com/shane.poldervaart">
+                    <a href="https://www.facebook.com/shane.poldervaart" aria-label="My Facebook Profile">
                         <span class="fa-stack fa-2x">
                             <i class="fas fa-square fa-stack-2x" aria-hidden="true"></i>
                             <i class="fab fa-facebook-f fa-stack-1x fa-inverse" aria-hidden="true"></i>
